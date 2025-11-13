@@ -32,9 +32,9 @@ The scan identified multiple hosts. The most critical findings were related to t
 
 | Port | State | Service | Version | Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| **21/tcp** | **open** | **ftp** | GNU Inetutils FTPd 1.4.1 | FTP traffic is unencrypted (plaintext). |
-| **80/tcp** | **open** | **http** | Boa HTTPd 0.93.15 | Unencrypted service. **Critical:** Running an extremely outdated version. |
-| **443/tcp** | **open** | **ssl/http** | Boa HTTPd 0.93.15 | Encrypted service, but the underlying server (Boa HTTPd 0.93.15) is vulnerable. |
+| **21/tcp** | **open** | **ftp** | GNU Inetutils FTPd 1.4.x | FTP traffic is unencrypted (plaintext). |
+| **80/tcp** | **open** | **http** | Boa HTTPd 0.93.xx | Unencrypted service. **Critical:** Running an extremely outdated version. |
+| **443/tcp** | **open** | **ssl/http** | Boa HTTPd 0.93.xx | Encrypted service, but the underlying server (Boa HTTPd 0.93.xx) is vulnerable. |
 
 ### Host: 192.168.1.xx (kali.bbrouter) - Specific Target
 
@@ -46,15 +46,15 @@ The packet analysis confirms the state of the ports through the TCP handshake pr
 
 | Port | Status | Evidence (TCP Flag Analysis) |
 | :--- | :--- | :--- |
-| **TCP Port 80** | **OPEN** | A SYN packet was answered with a **SYN, ACK** from the target (192.168.1.9), completing the two-way handshake. |
-| **TCP Port 443** | **CLOSED** | A SYN packet was answered with a **RST, ACK** from the target (192.168.1.9), indicating an explicit rejection. |
+| **TCP Port 80** | **OPEN** | A SYN packet was answered with a **SYN, ACK** from the target (192.168.1.x), completing the two-way handshake. |
+| **TCP Port 443** | **CLOSED** | A SYN packet was answered with a **RST, ACK** from the target (192.168.1.x), indicating an explicit rejection. |
 ---
 
 ## 🚨 Security Risks & Recommendations (Tasks 6–7)
 
 ### 1. **CRITICAL RISK:** Outdated Web Server
 
-* **Vulnerability:** The Boa HTTPd 0.93.15 web server software is decades old and contains publicly known vulnerabilities (e.g., buffer overflows, remote code execution flaws).
+* **Vulnerability:** The Boa HTTPd 0.93.xx web server software is decades old and contains publicly known vulnerabilities (e.g., buffer overflows, remote code execution flaws).
 * **Recommendation:** **IMMEDIATELY** patch or replace the web server software with a modern, maintained alternative (e.g., a current version of Apache or Nginx).
 
 ### 2. **HIGH RISK:** Unencrypted Services
