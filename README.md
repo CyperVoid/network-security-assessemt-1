@@ -36,7 +36,7 @@ The scan identified multiple hosts. The most critical findings were related to t
 | **80/tcp** | **open** | **http** | Boa HTTPd 0.93.15 | Unencrypted service. **Critical:** Running an extremely outdated version. |
 | **443/tcp** | **open** | **ssl/http** | Boa HTTPd 0.93.15 | Encrypted service, but the underlying server (Boa HTTPd 0.93.15) is vulnerable. |
 
-### Host: 192.168.1.9 (kali.bbrouter) - Specific Target
+### Host: 192.168.1.xx (kali.bbrouter) - Specific Target
 
 To verify the handshake status on this host, a Wireshark capture was performed, filtered on `tcp.port == 80 || tcp.port == 443`.
 
