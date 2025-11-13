@@ -48,13 +48,6 @@ The packet analysis confirms the state of the ports through the TCP handshake pr
 | :--- | :--- | :--- |
 | **TCP Port 80** | **OPEN** | A SYN packet was answered with a **SYN, ACK** from the target (192.168.1.9), completing the two-way handshake. |
 | **TCP Port 443** | **CLOSED** | A SYN packet was answered with a **RST, ACK** from the target (192.168.1.9), indicating an explicit rejection. |
-
-#### Packet Capture Evidence
-
-The screenshot below illustrates the Wireshark findings, showing the distinct responses for Port 80 (successful handshake) and Port 443 (RST flag set):
-
-![Wireshark Capture showing SYN, ACK for Port 80 and RST, ACK for Port 443](/evidence/wireshark_capture.jpg)
-
 ---
 
 ## 🚨 Security Risks & Recommendations (Tasks 6–7)
