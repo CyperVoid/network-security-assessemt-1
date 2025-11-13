@@ -28,7 +28,7 @@ The following steps were executed to perform the assessment:
 
 The scan identified multiple hosts. The most critical findings were related to the main network gateway and a target host running a non-standard web service.
 
-### Host: 192.168.1.1 (RTKGW.bbrouter) - Primary Gateway
+### Host: 192.168.x.x (RTKGW.bbrouter) - Primary Gateway
 
 | Port | State | Service | Version | Assessment |
 | :--- | :--- | :--- | :--- | :--- |
