@@ -1,0 +1,17 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Environment/Tooling specific
+*~
+*.log
+*.swp
+/bin/
+/obj/
+/temp/
+
+# Security/Personal files (Crucial to hide!)
+*.key
+*.pem
+*.pcapng
+*.pcap
