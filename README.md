@@ -15,7 +15,7 @@ The following steps were executed to perform the assessment:
 
 1.  **Install Nmap** from the official website.
 2.  **Find local IP range** (e.g., 192.168.1.0/24).
-3.  **Run Nmap:** `sudo nmap -sS -sV -O -T4 192.168.1.0/24` (TCP SYN, Service/Version detection, OS detection, aggressive timing).
+3.  **Run Nmap:** `sudo nmap -sS -sV -O -T4 192.168.1.0/x` (TCP SYN, Service/Version detection, OS detection, aggressive timing).
 4.  **Note down IP addresses and open ports found.**
 5.  **Analyze packet capture with Wireshark.**
 6.  **Research common services running on those ports.**
